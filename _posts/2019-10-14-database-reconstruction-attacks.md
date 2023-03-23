@@ -4,7 +4,7 @@ title: Database Reconstruction Attacks
 description:
 date: 2023-02-23 15:01:35 +0300
 author: mitchell
-image: '/images/16.jpg'
+image: '/images/dra-hero.jpg'
 # video_embed: https://www.youtube.com/embed/62bWUYRxi8g
 tags: [privacy, python, databases, z3]
 tags_color: '#064789'
