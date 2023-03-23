@@ -1,8 +1,8 @@
 #-------------------------------
 # Site Settings
-title: Mria
+title: Mitchell Lisle
 logo: # You can add own logo. For example '/images/logo.png'.
-description: Mria is a multipurpose blog theme for Jekyll
+description: ...
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -14,18 +14,16 @@ menu__settings:
       url: '/'
     - title: 'Blog'
       url: '/blog/'
-    - title: 'Authors'
-      url: '/authors/'
-    - title: 'Videos'
-      url: '/videos/'
+    - title: 'About'
+      url: '/about/'
+    - title: 'Contact'
+      url: '/contact/'
     - title: 'Pages'
       submenu:
       - url: '/about/'
         title: 'About'
       - url: '/contact/'
         title: 'Contact'
-      - url: '/elements/'
-        title: 'Elements'
 
 
 #-------------------------------
