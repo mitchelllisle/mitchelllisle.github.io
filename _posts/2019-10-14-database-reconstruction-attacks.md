@@ -95,7 +95,11 @@ Of course there could be many permutations, the model may output different answe
 
 If you want to see this in action, check out [this repo with a full implementation](https://github.com/mitchelllisle/database-reconstruction-attacks).
 
-Why is this possible? Well the answer to that comes from the same people that have come up with the best technique we know of to protecting against this type of attack:
+
+## Conclusion
+In this article, we've explored how aggregate data does little to hinder hackers from being able to re-create a database that is either very close, or exactly the same as the original data. It's important to consider this when releasing data.
+
+Before we wrap up, you may be asking why this is possible. Well the answer to that comes from the same people that have come up with the best technique we know of to protecting against this type of attack:
 
 > "[Giving] overly accurate answers to too many questions will destroy privacy in a spectacular way"
 >
