@@ -7,7 +7,7 @@ author: mitchell
 image: '/images/dra-hero.jpg'
 # video_embed: https://www.youtube.com/embed/62bWUYRxi8g
 tags: [privacy, python, databases, z3]
-tags_color: '#064789'
+tags_color: '#F08238'
 ---
 
 # Protecting Sensitive Data: Understanding Database Reconstruction Attacks
@@ -102,8 +102,8 @@ In this article, we've explored how aggregate data does little to hinder hackers
 Before we wrap up, you may be asking why this is possible. Well the answer to that comes from the same people that have come up with the best technique we know of to protecting against this type of attack:
 
 > "[Giving] overly accurate answers to too many questions will destroy privacy in a spectacular way"
->
-> Cynthia Dwork and Aaron Roth, Authors of 'The Algorithmic foundations of Differential Privacy'
+
+Cynthia Dwork and Aaron Roth, Authors of 'The Algorithmic foundations of Differential Privacy'
 
 The next question you may be asking is "How do I protect against this attack?". A couple of things you can look at include:
  - [Differential privacy](https://desfontain.es/privacy/friendly-intro-to-differential-privacy.html): DP is a great fit for protecting this type of data. In fact, the US Census Bereau have adopted DP to avoid disclosure of private information about individuals
