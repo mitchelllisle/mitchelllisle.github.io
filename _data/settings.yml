@@ -25,7 +25,7 @@ menu__settings:
 hero:
   enable: true
   hero__title: "Byte Me: Tales of Data Engineering and Privacy Protection"
-  hero__description: Thoughts, stories and ideas about data, privacy and everything in between.
+  hero__description: ...
   hero__image: # You can add hero image. For example '/images/06.jpg'
 
 
