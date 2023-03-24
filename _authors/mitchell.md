@@ -1,8 +1,8 @@
 ---
 username: mitchell
-name: Mitchell
+name: Mitchell Lisle
 image: '/images/mitchell.jpg'
 cover:
 location: Sydney
 ---
-I have experience in photographing beauty, fashion, e-commerce, and product photography for various brands.
+I am a Data / Privacy Engineer based in Sydney.
