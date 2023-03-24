@@ -24,16 +24,16 @@ menu__settings:
 # Hero Settings
 hero:
   enable: true
-  hero__title: Thoughts, stories and ideas.
-  hero__description: Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.
+  hero__title: "Byte Me: Tales of Data Engineering and Privacy Protection"
+  hero__description: Thoughts, stories and ideas about data, privacy and everything in between.
   hero__image: # You can add hero image. For example '/images/06.jpg'
 
 
 #-------------------------------
 # Author Global Settings
 author:
-  author__name: Alena Curtis
-  author__bio: I’m a published content creator, brand copywriter, photographer, and social media content creator and manager. I help brands connect with their customers by developing engaging content that entertains, educates, and offers value to their audience.
+  author__name: Mitchell Lisle
+  author__bio: ...
   author__avatar: /images/01-1.jpg
 
 
