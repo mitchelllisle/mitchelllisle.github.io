@@ -24,8 +24,6 @@ menu__settings:
 # Hero Settings
 hero:
   enable: true
-  hero__title: "Byte Me: Tales of Data Engineering and Privacy Protection"
-  hero__description: ...
   hero__image: # You can add hero image. For example '/images/06.jpg'
 
 
