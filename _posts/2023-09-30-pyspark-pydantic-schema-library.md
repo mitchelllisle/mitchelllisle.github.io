@@ -14,17 +14,33 @@ tags_color: '#F08238'
 
 ### 1. Introduction of the Problem Sparkdantic Solves
 
-In the world of Big Data, PySpark has become a go-to framework for processing large datasets. However, as with any framework, there are challenges. One of the most common challenges is defining schemas for DataFrames and generating realistic test data. Whether you're writing unit tests, populating a development database, or just experimenting, having a reliable way to create and populate DataFrames is crucial.
+In the world of Big Data, PySpark has become a go-to framework for processing large datasets. However, as with any 
+framework, there are challenges. One of the most cumbersome challenges is defining schemas for DataFrames and generating 
+realistic test data. PySpark often does a good job of inferring schemas, but in some cases you need to define a schema
+to ensure your data arrives in the most correct state.
 
-Traditionally, developers would manually define schemas and write custom code to generate test data. This process is not only tedious but also error-prone. What if there was a more streamlined way to handle this?
+Pydantic is another library that is hugely popular and provides so many excellent capabilities when it comes to validating
+your data. Up until now, there hasn't been an easy way tp use both. 
 
-Enter Sparkdantic, which offers a seamless integration between Pydantic models and PySpark DataFrames. With Sparkdantic, you can define DataFrame schemas using Pydantic models and generate realistic test data based on specifications.
+Traditionally, developers would manually define schemas and write custom code to generate test data. This process is not
+only tedious but also error-prone. While PySpark provides a way to define schemas, it doesn't take advantage of Pythons
+in-built data types which mean you can have to define your schema in the way PySpark wants you to.
+
+> What if there was a more streamlined way to handle schemas, interoperability between Python and Spark and an easy way
+> to generate fake / test data?
+
+Enter Sparkdantic, which offers a seamless integration between Pydantic models and PySpark DataFrames. With Sparkdantic,
+you can define DataFrame schemas using Pydantic models and generate realistic test data based on custom specifications.
 
 ### 2. Creating Schemas and How Sparkdantic Makes It Easy
 
-With PySpark, defining a schema usually involves creating a `StructType` object with a list of `StructField` objects. While this method is powerful, it can become verbose and hard to manage for complex schemas.
+With PySpark, defining a schema usually involves creating a `StructType` object with a list of `StructField` objects. 
+While this method is powerful, it can become verbose and hard to manage for complex schemas. You also can't use this 
+schema outside of PySpark.
 
-Using Sparkdantic, you can leverage Pydantic models to define your DataFrame schema. Pydantic models are Python classes that define data shapes and validation. They are concise, readable, and offer powerful validation capabilities.
+Using Sparkdantic, you can leverage Pydantic models to define your DataFrame schema. Pydantic models are Python classes 
+that define data shapes and validation. They are concise, readable, and offer powerful validation capabilities. A basic
+Pydantic model may look like this:
 
 ```python
 from pydantic import BaseModel
@@ -35,7 +51,8 @@ class User(BaseModel):
     email: str
 ```
 
-With the `SparkModel` class from Sparkdantic, you can easily convert this Pydantic model into a PySpark schema:
+With the `SparkModel` class from Sparkdantic, you can easily convert this Pydantic model into a PySpark schema which
+gives you the ability to generate a PySpark valid schema with the `model_spark_schema` method:
 
 ```python
 from sparkdantic import SparkModel
@@ -62,7 +79,8 @@ StructType([
 
 ### 3. Generating Realistic Fake Data for Unit Tests / Populating a Development Database
 
-Once you have your schema, the next challenge is populating it with realistic data. Sparkdantic provides the `ColumnGenerationSpec` class, which lets you define specifications for generating data for each column.
+Once you have your schema, the next challenge is populating it with realistic data. Sparkdantic provides the 
+`ColumnGenerationSpec` class, which lets you define specifications for generating data for each column.
 
 For instance, if you want the `age` column to have random values between 20 and 50:
 
@@ -72,8 +90,8 @@ from sparkdantic.generation import ColumnGenerationSpec
 age_spec = ColumnGenerationSpec(min_value=20, max_value=50, random=True)
 ```
 
-You may also want a list of names to use for the name column. For this, we can leverage other libraries such as the well known
-`faker` library:
+You may also want a list of names to use for the name column. For this, we can leverage other libraries such as the well
+known `faker` library:
 
 ```python
 from faker import Faker
@@ -82,10 +100,11 @@ faker = Faker()
 
 names = [faker.name() for _ in range(1000)]
 
-name_spec = ColumnGenerationSpec(values=names)
+name_spec = ColumnGenerationSpec(values=names, random=True)
 ```
 
-Using the `generate_data` method of the `SparkModel` in Sparkdantic, you can then generate a DataFrame with the desired number of rows:
+Using the `generate_data` method of the `SparkModel` in Sparkdantic, you can then generate a DataFrame with the desired
+number of rows:
 
 ```python
 spark = SparkSession.builder.appName("demo").getOrCreate()
@@ -93,10 +112,15 @@ data = UserSparkSchema.generate_data(spark, n_rows=1000, specs={"age": age_spec,
 data.show()
 ```
 
-This will produce a DataFrame with 1000 rows, with the `age` column populated with random values between 20 and 50.
+This will produce a DataFrame with 1000 rows, with the `age` column populated with random values between 20 and 50 and
+a randomly chosen name from a list of 1000 fake names generated by `faker`.
 
 ### 4. Conclusion
 
-Defining PySpark DataFrame schemas and generating test data doesn't have to be a cumbersome process. With the integration of Pydantic models and Sparkdantic, you can streamline these tasks, making your development process more efficient and error-free.
+Defining PySpark DataFrame schemas and generating test data doesn't have to be a cumbersome process. With the 
+integration of Pydantic models and Sparkdantic, you can streamline these tasks, making your development process more 
+efficient and error-free.
 
-Whether you're a data engineer writing unit tests, a data scientist experimenting with data, or a developer populating a development database, Sparkdantic offers a powerful toolset to make your life easier. Give it a try and elevate your PySpark game!
+Whether you're a data engineer writing unit tests, a data scientist experimenting with data, or a developer populating a
+development database, Sparkdantic offers a powerful toolset to make your life easier. Give it a try and elevate your 
+PySpark game!
