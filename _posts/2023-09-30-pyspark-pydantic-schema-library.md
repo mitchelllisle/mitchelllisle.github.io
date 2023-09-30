@@ -38,15 +38,27 @@ class User(BaseModel):
 With the `SparkModel` class from Sparkdantic, you can easily convert this Pydantic model into a PySpark schema:
 
 ```python
+from sparkdantic import SparkModel
+
 class UserSparkSchema(SparkModel):
     name: str
     age: int
     email: str
 
-print(UserSparkSchema.model_spark_schema())
+schema = UserSparkSchema.model_spark_schema()
 ```
 
 This will output a PySpark `StructType` schema, ready to be used in your DataFrames.
+
+```python
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType
+
+StructType([
+    StructField('name', StringType(), False), 
+    StructField('age', IntegerType(), False), 
+    StructField('email', StringType(), False)
+])
+```
 
 ### 3. Generating Realistic Fake Data for Unit Tests / Populating a Development Database
 
@@ -60,11 +72,24 @@ from sparkdantic.generation import ColumnGenerationSpec
 age_spec = ColumnGenerationSpec(min_value=20, max_value=50, random=True)
 ```
 
+You may also want a list of names to use for the name column. For this, we can leverage other libraries such as the well known
+`faker` library:
+
+```python
+from faker import Faker
+
+faker = Faker()
+
+names = [faker.name() for _ in range(1000)]
+
+name_spec = ColumnGenerationSpec(values=names)
+```
+
 Using the `generate_data` method of the `SparkModel` in Sparkdantic, you can then generate a DataFrame with the desired number of rows:
 
 ```python
 spark = SparkSession.builder.appName("demo").getOrCreate()
-data = UserSparkSchema.generate_data(spark, n_rows=1000, specs={"age": age_spec})
+data = UserSparkSchema.generate_data(spark, n_rows=1000, specs={"age": age_spec, "name": name_spec})
 data.show()
 ```
 
