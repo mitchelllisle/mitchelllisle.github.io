@@ -4,13 +4,14 @@ title: "One schema library to rule them all"
 description:
 date: 2023-09-30 15:01:35 +0300
 author: mitchell
-image: '/images/sparkdantic.jpg'
+image: '/images/sparkdantic-hero.jpg'
 # video_embed: https://www.youtube.com/embed/62bWUYRxi8g
 tags: [pydantic, python, pyspark, schema]
 tags_color: '#F08238'
 ---
 
 ## Generating and Testing PySpark DataFrames with Sparkdantic
+
 
 ### 1. Introduction of the Problem Sparkdantic Solves
 
@@ -31,6 +32,10 @@ in-built data types which mean you can have to define your schema in the way PyS
 
 Enter Sparkdantic, which offers a seamless integration between Pydantic models and PySpark DataFrames. With Sparkdantic,
 you can define DataFrame schemas using Pydantic models and generate realistic test data based on custom specifications.
+
+To read more about Sparkdantic and install it, see my GitHub profile [here](https://github.com/mitchelllisle/sparkdantic)
+
+`pip install sparkdantic`
 
 ### 2. Creating Schemas and How Sparkdantic Makes It Easy
 
