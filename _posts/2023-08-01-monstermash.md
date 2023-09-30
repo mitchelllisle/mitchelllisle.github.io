@@ -1,3 +1,15 @@
+---
+layout: post
+title: "A friendly encryption CLI tool"
+description:
+date: 2023-09-01 15:01:35 +0300
+author: mitchell
+image: '/images/monstermash-hero.jpg'
+# video_embed: https://www.youtube.com/embed/62bWUYRxi8g
+tags: [NaCL, python, encryption, cli]
+tags_color: '#F08238'
+---
+
 ## 🧟 Monstermash: A Simple CLI Tool for Data Encryption
 
 ### Introduction
