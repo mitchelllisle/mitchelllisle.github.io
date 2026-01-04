@@ -2,7 +2,7 @@
 layout: post
 title: "Mapping Fire: Five Decades of Bushfires in NSW"
 description: An interactive dashboard exploring patterns in NSW's fire history since 1970
-date: 2026-01-04 10:00:00 +0000
+date: 2026-01-04 00:00:00 +1100
 author: mitchell
 image: '/images/nsw-blue-mountains.jpg'
 tags: [data, visualisation, australia, climate]
