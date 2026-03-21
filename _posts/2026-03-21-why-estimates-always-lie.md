@@ -4,7 +4,7 @@ title: "Why Estimates Always Lie — And What to Do About It"
 description: A look at why software estimation is so reliably broken, and a tool I built to make it a little more honest
 date: 2026-03-21 00:00:00 +1100
 author: mitchell
-image: '/images/truestimates.jpg'
+image: '/images/trueestimates.jpg'
 image_credit: 'Photo by <a href="https://unsplash.com/@joelfilip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joel Filipe</a> on <a href="https://unsplash.com/photos/clear-glass-building-ZMRMFULofus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 tags: [software, estimation, productivity, tools]
 tags_color: '#6366f1'
