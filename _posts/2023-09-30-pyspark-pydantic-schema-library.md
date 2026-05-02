@@ -4,7 +4,7 @@ title: "One schema library to rule them all"
 description:
 date: 2023-09-30 15:01:35 +0300
 author: mitchell
-image: '/images/sparkdantic-hero.jpg'
+image: '/images/sparkdantic.jpg'
 # video_embed: https://www.youtube.com/embed/62bWUYRxi8g
 tags: [pydantic, python, pyspark, schema]
 tags_color: '#F08238'
