@@ -5,12 +5,12 @@
     <div class="row">
       <div class="col col-12">
         <div class="hero__inner">
-          {{ if site.data.settings.hero.hero__title }}
+          {% if site.data.settings.hero.hero__title %}
             <h1 class="hero__title">{{ site.data.settings.hero.hero__title }}</h1>
-          {{ end }}
-          {{ if site.data.settings.hero.hero__description }}
+          {% endif %}
+          {% if site.data.settings.hero.hero__description %}
             <p class="hero__description">{{ site.data.settings.hero.hero__description }}</p>
-          {{ end }}
+          {% endif %}
         </div>
       </div>
     </div>
