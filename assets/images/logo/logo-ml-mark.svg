@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="topA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b57bf0"/>
+      <stop offset="100%" stop-color="#9a61ea"/>
+    </linearGradient>
+    <linearGradient id="topB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c693f5"/>
+      <stop offset="100%" stop-color="#a773ee"/>
+    </linearGradient>
+    <linearGradient id="sideL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9a61ea"/>
+      <stop offset="100%" stop-color="#7b44db"/>
+    </linearGradient>
+    <linearGradient id="sideR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8e56e6"/>
+      <stop offset="100%" stop-color="#6e39d6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- left beam top -->
+  <polygon points="14,60 58,36 110,66 66,90" fill="url(#topA)"/>
+  <!-- right beam top -->
+  <polygon points="58,84 112,54 146,72 92,102" fill="url(#topB)"/>
+  <!-- center join top -->
+  <polygon points="58,84 66,90 80,76 72,70" fill="#bb8cf2"/>
+
+  <!-- left beam sides -->
+  <polygon points="14,60 14,94 66,124 66,90" fill="url(#sideL)"/>
+  <polygon points="66,90 66,124 110,100 110,66" fill="url(#sideR)"/>
+
+  <!-- right beam sides -->
+  <polygon points="92,102 92,136 146,106 146,72" fill="url(#sideR)"/>
+  <polygon points="58,84 58,118 92,136 92,102" fill="url(#sideL)"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" fill="none">
+  <g stroke="#17221E" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- top and bottom chords -->
+    <path d="M20 56H172"/>
+    <path d="M20 136H172"/>
+
+    <!-- end posts -->
+    <path d="M20 56V136"/>
+    <path d="M172 56V136"/>
+
+    <!-- center post -->
+    <path d="M96 56V136"/>
+
+    <!-- upper fan webs (double fan) -->
+    <path d="M96 56L52 136"/>
+    <path d="M96 56L72 136"/>
+    <path d="M96 56L120 136"/>
+    <path d="M96 56L140 136"/>
+
+    <!-- lower fan webs (double fan) -->
+    <path d="M96 136L52 56"/>
+    <path d="M96 136L72 56"/>
+    <path d="M96 136L120 56"/>
+    <path d="M96 136L140 56"/>
+  </g>
+</svg>

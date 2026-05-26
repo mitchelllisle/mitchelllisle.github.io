@@ -1,0 +1,62 @@
+.heading .heading-heading h1 {
+    font-size: 86px;
+    line-height: 1;
+    width: 80%;
+    letter-spacing: -2px;
+    font-weight: 700;
+    strong {
+        text-decoration-color: var(--color-base-bg-3);
+    }
+}
+
+/* Ensure post thumbnails render with consistent proportions and no stretching */
+.card-post:not(.card-list) .card-thumbnail {
+    display: block;
+    aspect-ratio: 16 / 9;
+}
+
+.card-post:not(.card-list) .card-thumbnail a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.card-post:not(.card-list) .card-thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stack-grid {
+    margin: 16px 0 26px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 4px 6px;
+}
+
+.stack-grid__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 34px;
+}
+
+.stack-grid__item img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.stack-grid__item span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-base-text);
+    line-height: 1.2;
+}
+
+html[data-bs-theme='dark'] .stack-grid__logo--dark-friendly {
+    filter: invert(1) brightness(1.2);
+}
+

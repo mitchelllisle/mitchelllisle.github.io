@@ -1,8 +1,9 @@
 #-------------------------------
 # Site Settings
-title: Underhill
+title: Mitchell Lisle
+subtitle: On data, engineering, organisations, and messy realities.
 logo: # You can add own logo. For example '/images/logo.png'.
-description: ...
+description: Engineering Manager working across data engineering, platform, and governance. Here I write about building data systems, the teams behind them, and the messy politics of technology.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -25,13 +26,15 @@ menu__settings:
 hero:
   enable: true
   hero__image: # You can add hero image. For example '/images/06.jpg'
+  hero__title: Mitchell Lisle
+  hero__description: "My name is Mitchell Lisle. I'm an Engineering Manager working across data engineering, platform, and governance. Here I write about building data systems, the teams behind them, and the messy politics of technology."
 
 
 #-------------------------------
 # Author Global Settings
 author:
   author__name: Mitchell Lisle
-  author__bio: ...
+  author__bio: Engineering Manager — Data Engineering, Platform & Governance. Writer. Blue Mountains, NSW.
   author__avatar: /images/01-1.jpg
 
 
@@ -61,13 +64,13 @@ tag__settings:
 #-------------------------------
 # Author Section Settings
 author__section:
-  enable: false
-  author__section__title: Hello, my name is Alena. I’m reviewer and content creator.
-  author__section__description: I’m a published content creator, brand copywriter, photographer, and social media content creator and manager. I help brands connect with their customers by developing engaging content that entertains, educates, and offers value to their audience.
+  enable: true
+  author__section__title: "[PLACEHOLDER] Hello — I'm Mitchell Lisle."
+  author__section__description: "[PLACEHOLDER] A few sentences here about who you are, what you care about, and what kind of work you do. This is the spot for a human-sounding summary — not a CV bullet list. Think: what would you say to someone at a conference who asked what you do?"
   aurhor__section__button__text: More About Me
   aurhor__section__button__link: /about
-  author__section__big__image: /images/100.jpg
-  author__section__small__image: /images/101.jpg
+  author__section__big__image: /images/mitchell-profile.jpg
+  author__section__small__image:
 
 
 #-------------------------------
@@ -75,8 +78,8 @@ author__section:
 mailchimp__settings:
   enable: false
   mailchimp__title: Get interesting news
-  mailchimp__description: Subscribe to our newsletter and we’ll send you the emails of latest posts.
-  mailchimp__identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+  mailchimp__description: Subscribe to our newsletter and we'll send you the emails of latest posts.
+  mailchimp__identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
   mailchimp__input__text: Your email address
   mailchimp__button__text: Subscribe
   mailchimp__background__image: /images/subscribe-bg.jpg
@@ -84,7 +87,7 @@ mailchimp__settings:
 
 #-------------------------------
 # Footer Settings
-footer__description: 
+footer__description: Writing about data, organisations, and the politics of technology.
 
 
 # Social Links
@@ -92,9 +95,6 @@ social:
 - {icon: "twitter", link: "https://twitter.com/mitchelllisle"}
 - {icon: "github", link: "https://github.com/mitchelllisle"}
 - {icon: "linkedin", link: "https://www.linkedin.com/in/mlisle/"}
-
-# Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
-# Other icons can be found at https://ionicons.com/v4/
 
 
 # Footer Navigation
@@ -111,11 +111,8 @@ footer__menu__settings:
 #-------------------------------
 # Contact Settings
 contact:
-  email: m.lisle90@email.com # Add your form_id
-  description: ...
-
-# NOTE
-# Mria theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+  email: m.lisle90@email.com
+  description: Interested in working together, speaking opportunities, or just want to talk data? Get in touch.
 
 
 #-------------------------------

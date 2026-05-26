@@ -1,0 +1,12 @@
+[
+  {
+    "title": "LinkedIn",
+    "fa_icon": "fab fa-linkedin",
+    "url": "https://www.linkedin.com/in/mlisle/"
+  },
+  {
+    "title": "GitHub",
+    "fa_icon": "fab fa-github",
+    "url": "https://github.com/mitchelllisle"
+  }
+]

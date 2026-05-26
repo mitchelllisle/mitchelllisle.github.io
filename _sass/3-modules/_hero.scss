@@ -21,19 +21,19 @@
 
 .hero__title {
   margin-bottom: 20px;
-  font-size: 60px;
+  font-size: 48px;
   color: var(--heading-font-color);
 
   @media only screen and (max-width: $desktop) {
-    font-size: 50px;
-  }
-
-  @media only screen and (max-width: $tablet) {
     font-size: 40px;
   }
 
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: $tablet) {
     font-size: 32px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 26px;
   }
 }
 
