@@ -1,8 +1,9 @@
 #-------------------------------
 # Site Settings
-title: Underhill
+title: Mitchell Lisle
+subtitle: On data, engineering, organisations, and messy realities.
 logo: # You can add own logo. For example '/images/logo.png'.
-description: Mitchell Lisle — Engineering Manager for Data Engineering, Platform & Governance. Writing about data, organisations, and the politics of technology.
+description: Engineering Manager working across data engineering, platform, and governance. Here I write about building data systems, the teams behind them, and the messy politics of technology.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -26,7 +27,7 @@ hero:
   enable: true
   hero__image: # You can add hero image. For example '/images/06.jpg'
   hero__title: Mitchell Lisle
-  hero__description: Engineering Manager — Data Engineering, Platform & Governance. I build data teams and platforms that actually work. I also write about data, organisations, and the politics of technology.
+  hero__description: "My name is Mitchell Lisle. I'm an Engineering Manager working across data engineering, platform, and governance. Here I write about building data systems, the teams behind them, and the messy politics of technology."
 
 
 #-------------------------------
@@ -68,8 +69,8 @@ author__section:
   author__section__description: "[PLACEHOLDER] A few sentences here about who you are, what you care about, and what kind of work you do. This is the spot for a human-sounding summary — not a CV bullet list. Think: what would you say to someone at a conference who asked what you do?"
   aurhor__section__button__text: More About Me
   aurhor__section__button__link: /about
-  author__section__big__image: /images/100.jpg
-  author__section__small__image: /images/101.jpg
+  author__section__big__image: /images/mitchell-profile.jpg
+  author__section__small__image:
 
 
 #-------------------------------

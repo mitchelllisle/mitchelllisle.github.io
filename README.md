@@ -1,73 +1,56 @@
-# Mria is a multipurpose Jekyll blog theme.
+# Jekyll Curate Premium Theme
 
-Mria is a high-quality multipurpose Jekyll theme with a unique style and clean code. You can use Mria for multipurpose like blog, magazine, portfolio, etc. This theme is fully responsive, and it looks good on all types of screens and devices. If you’re looking for a theme that is clean, high performance, and simple, the Mria theme is exactly what you’re looking for then.
+Jekyll Curate is a premium portfolio theme for Jekyll.
 
-* * *
+## Documentation
 
-### Demo
+* Live Docs: https://www.zerostatic.io/docs/jekyll-curate
+* Demo: https://jekyll-curate.netlify.app/
 
-Check the theme in action [Live Demo](https://mria.netlify.app/) |
-[Artem Sheludko](https://jekyllthemes.io/developers/artem-sheludko)
+## Screenshot
 
-* * *
+![Jekyll Curate Theme screenshot](https://www.zerostatic.io/theme/jekyll-curate/jekyll-curate-screenshot.png)
 
-### Theme features
+## Install
 
-- Works with GitHub Pages (host it for free)
-- Dark and light mode
-- No jQuery, only vanilla JS
-- 100% responsive Design
-- Clean and Modern Code
-- Optimized for mobile devices
-- Section featured posts
-- Section blog
-- Section videos
-- Section tag
-- Super fast performance ⚡⚡⚡
-- Social sharing buttons
-- Scroll to top button
-- Syntax highlighting (supports the Jekyll syntax highlighter)
-- Compatible with modern browsers
-- Medium style image zoom
-- Image Lazy loading
-- Image gallery
-- Tag page
-- Author page
-- Custom logo support
-- Support for multiple authors
-- Supports video posts
-- Supports contact form (Formspree)
-- Supports MailChimp newsletter
-- Supports Disqus comments
-- Supports Google Analytics
-- Ionicons icons
-- Free Google Fonts
-- Free Updates & Support
+### Install Jekll
 
-* * *
+Make sure you have Ruby & Jekyll installed - For a step-by-step guide, read Jekyll docs [installation](https://jekyllrb.com/docs/installation/)
 
-### Installation
+### Install Theme
 
-#### Installing Ruby & Jekyll
+Extract the theme .zip file to your local computer. Navigate to the project root (it contains the README.md)
 
-If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
+Run `bundle install` to install gems.
 
-* * *
+Then run `bundle exec jekyll serve` to start the Jekyll local development server.
 
-### Deployment
+To build the Jekyll site run `bundle exec jekyll build`
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+## Deploy
 
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
+### Deploy to Netlify
 
-* * *
+This theme is pre-configured to deploy with [Netlify](https://docs.netlify.com/site-deploys/create-deploys/).
 
-### Documentation
+> 💡 If you experience bundle install issues during the Netlify deployment, deleting the Gemfile.lock can sometimes help
 
-Before using the Mria theme, please read the attached documentation.
+### Deploy to GitHub Pages
 
-* * *
+This theme has been tested to work with GitHub Pages. If you are creating a GitHub Pages "Project site" then your site will be in a sub-folder ie `http://username.github.io/repository` You will need to update the `baseurl` in the `_config.yml` for the asset paths to work correctly.
 
-### Support
+```yaml
+# _config.yml
+baseurl: "/my-repo-name" # replace this with the name of your repo
+url: ""
+```
 
-<p>If you have any questions, please feel free to contact me by mail <a href="mailto:hi.artemsheludko@gmail.com">Contact</a><p>
+> 💡 Github pages can be tricky to configure correctly. While we have tested this theme with Github pages, we do not provide support for deploying on this platform. If you continue to experience problems we recommend trying Netlify.
+
+## Credits
+
+This theme uses open-source libraries and assets.
+
+- **Bootstrap 5.3.2** https://unsplash.com/license
+- **Font Awesome 6 Free:** https://fontawesome.com/
+- **Unsplash Images** https://unsplash.com/

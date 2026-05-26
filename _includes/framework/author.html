@@ -1,0 +1,26 @@
+{% assign author_key = include.author %}
+{% assign author = site.data.authors[author_key] %}
+
+{% assign name = include.name | default: author.name %}
+{% assign job = include.job | default: author.job %}
+{% assign image = include.image | default: author.image %}
+{% assign date = include.date %}
+
+<div class="author">
+  {% if image %}
+  <div class="author-image">
+    <img src="{{ image | relative_url }}" alt="{{ name }}" />
+  </div>
+  {% endif %}
+
+  {% if name or date %}
+  <div class="author-content">
+    {% if name %}<div class="author-name">{{ name }}</div>{% endif %}
+    {% if date %}
+    <div class="author-date">{{ date | date_to_long_string }}</div>
+    {% elsif job %}
+    <div class="author-job">{{ job }}</div>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>

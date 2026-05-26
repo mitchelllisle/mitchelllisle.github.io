@@ -1,0 +1,39 @@
+main:
+  - name: Home
+    url: /
+    weight: 1
+  - name: Blog
+    url: /blog/
+    weight: 2
+  - name: About
+    url: /about/
+    weight: 3
+  - name: Contact
+    url: /contact/
+    weight: 4
+
+footer_primary: []
+
+footer_secondary:
+  - name: Blog
+    url: /blog/
+    weight: 1
+  - name: About
+    url: /about/
+    weight: 2
+  - name: Contact
+    url: /contact/
+    weight: 3
+
+footer_tertiary: []
+
+bottom:
+  - name: Blog
+    url: /blog/
+    weight: 1
+  - name: About
+    url: /about/
+    weight: 2
+  - name: Contact
+    url: /contact/
+    weight: 3

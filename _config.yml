@@ -1,57 +1,187 @@
-#-------------------------------
-# General Site Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-
-#-------------------------------
-# Build Settings
+# -------------------
+# Jekyll Config
+# --------------------
+baseurl: ""
+url: ""
+permalink: pretty
 markdown: kramdown
-permalink: /:title
+highlighter: rouge
+
+# Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
 
-paginate: 7
+paginate: 6
 paginate_path: "/blog/page/:num"
 
-
-#-------------------------------
 # Collections
+collections_dir: collections
 collections:
-  pages:
+  projects:
     output: true
-    permalink: /:name
+    permalink: /:collection/:path/
   posts:
     output: true
-    permalink: /blog/:slug
-  authors:
-    output: true
-    permalink: /:name
+    permalink: /blog/:path/
 
-# Pages Path
+# Pages
 defaults:
   - scope:
       path: ""
+      type: projects
     values:
-      layout: "default"
+      layout: project
   - scope:
       path: ""
-      type: "pages"
+      type: posts
     values:
-      layout: "page"
+      layout: post
+      weight: 999
   - scope:
-      path: ""
-      type: "posts"
+      path: "images"
     values:
-      layout: "post"
+      image: true
   - scope:
-      path: ""
-      type: "authors"
+      path: "categories"
     values:
-      layout: "author"
+      permalink: /category/:basename/
+  - scope:
+      path: "pages"
+    values:
+      permalink: /:basename/
 
-
+# SCSS
 sass:
-  sass_dir: _sass
-  style: compressed
+  style: compact
+
+# Excludes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - netlify.toml
+
+
+# -------------------
+# Theme Config
+# --------------------
+title: "Mitchell Lisle"
+category_dir: category
+
+colors:
+  #light-mode colors
+  primary_bg: "#123b33"
+  primary_bg_2: "#1b4d42"
+  primary_bg_3: "#2e6a5c"
+  primary_text: "#f7faf8"
+  base_bg: "#fbfcfb"
+  base_bg_2: "#f3f7f4"
+  base_bg_3: "#e2eee8"
+  base_text: "#17221e"
+  base_text_2: "#44524b"
+  logo_text: "#17221e"
+  header_text: "#17221e"
+
+  # dark-mode colors
+  primary_bg_dark: "#f59e0b"
+  primary_bg_2_dark: "#d97706"
+  primary_bg_3_dark: "#b45309"
+  primary_text_dark: "#111111"
+  base_bg_dark: "#0f1113"
+  base_bg_2_dark: "#171a1d"
+  base_bg_3_dark: "#22272b"
+  base_text_dark: "#f3f4f6"
+  base_text_2_dark: "#b8c0c7"
+  logo_text_dark: "#f3f4f6"
+  header_text_dark: "#f3f4f6"
+
+fonts:
+  use_google_fonts: false
+  google_fonts_url: "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,700&family=Fira+Mono&display=swap"
+  use_self_hosted_fonts: true # font files must be placed in /assets/fonts folder and the @font-face definitions must be added to /assets/css/fonts.css
+  heading: "'DM Sans'"
+  base: "'DM Sans'"
+  monospace: "'Fira Mono'"
+  logo: "'DM Sans'"
+
+logo:
+  logo_text: "Mitchell Lisle"
+  logo_image: assets/images/logo/logo-three-circles-v1.svg
+  logo_image_mobile: assets/images/logo/logo-three-circles-v1.svg
+  logo_image_invert: assets/images/logo/logo-three-circles-invert-v1.svg
+  logo_image_invert_mobile: assets/images/logo/logo-three-circles-invert-v1.svg
+  logo_image_desktop_height: "44px"
+  logo_image_desktop_width: "44px"
+  logo_image_mobile_height: "44px"
+  logo_image_mobile_width: "44px"
+  show_logo_image_on_mobile: true
+  show_logo_image_on_desktop: true
+  show_logo_text_on_mobile: false
+  show_logo_text_on_desktop: false
+
+header: 
+  fixed: false
+
+open_graph:
+  meta_opengraph_type: "website"
+  meta_twitter_card: "summary"
+  meta_twitter_site: "@mitchelllisle"
+  meta_twitter_creator: "@mitchelllisle"
+
+darkmode:
+  enable_dark_mode: true
+  show_dark_mode_toggle_in_header: true
+  show_dark_mode_toggle_in_bottom: false
+  show_dark_mode_toggle_in_mobile_menu: true
+
+cookie_banner:
+  enabled: true
+  show_manage_cookies_at_bottom: true
+
+analytics:
+  google_analytics_id: "" # G-XXXXXXXXXX
+  gtm_id: "" # GTM-XXXXXXXX
+  plausible_data_domain: "" # example: mywebsite.com
+  umami_data_website_id: "" # example: "ddd14336-5fb0-4cdd-8f32-e1bfa906cc2b"
+  umami_src: "" # "https://analytics.eu.umami.is/script.js"
+
+comments:
+  commento:
+    enabled: false # you must have a commento account and be on the correct domain. does not work locally.
+  disqus:
+    shortname: "" # Your disqus shortcode for example "zerostatic". leave this blank ie "" to disable.
+
+newsletter:
+  mailchimp:
+    form_action_url: ""
+    form_title: ""
+
+contact_form: 
+  use_netlify_form: false
+  use_formspree_form: true
+  formspree_endpoint: https://formspree.io/f/mdajwrnp
+  netlify_form_name: "contact"
+
+menu: 
+  show_dropdown_items_in_mobile_menu: false
+  show_social_media_in_mobile_menu: true
+
+footer:
+  enable_footer: true # show/hide the entire footer
+  footer_title: "Mitchell Lisle"
+  footer_description: "On data, engineering, organisations, and messy realities."
+  enable_social_media_icons: true
+  enable_contact_details: false
+  enable_menu_footer_primary: false
+  enable_menu_footer_secondary: true
+  enable_menu_footer_tertiary: false
+  footer_primary_menu_title: ""
+  footer_secondary_menu_title: "Explore"
+  footer_tertiary_menu_title: "Other"
+
+bottom:
+  enable_bottom: false # show/hide the entire bottom (below the footer)
+  enable_bottom_menu: false # if enabled, the bottom menu can be edited in `_data/menu.yml`
+  copyright_text: "© 2026 Mitchell Lisle"
+  show_rss_icon: true
