@@ -84,10 +84,10 @@ colors:
   header_text: "#17221e"
 
   # dark-mode colors
-  primary_bg_dark: "#f59e0b"
-  primary_bg_2_dark: "#d97706"
-  primary_bg_3_dark: "#b45309"
-  primary_text_dark: "#111111"
+  primary_bg_dark: "#1a6b59"
+  primary_bg_2_dark: "#2a7a68"
+  primary_bg_3_dark: "#3d9a7f"
+  primary_text_dark: "#f7faf8"
   base_bg_dark: "#0f1113"
   base_bg_2_dark: "#171a1d"
   base_bg_3_dark: "#22272b"
