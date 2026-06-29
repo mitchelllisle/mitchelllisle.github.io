@@ -33,16 +33,17 @@ title: "Blog"
 
               {% for post in posts %}
                 {% assign post_thumbnail = post.thumbnail | default: post.image %}
+                {% assign post_date = post.date | date: "%Y-%m-%d" %}
                 <div class="col-12 col-md-12 col-lg-10 mb-6">
                   {% include theme/cards/card-post.html
-                    date=post.date
+                    date=post_date
                     title=post.title
                     description=post.description 
                     url=post.url
                     thumbnail=post_thumbnail
                     authors=post.authors
                     author=post.author
-                    categories=post.categories
+                    categories=post.tags
                     style="row"
                   %}
                 </div>

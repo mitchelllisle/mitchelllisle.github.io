@@ -38,14 +38,21 @@ body_classes: page-post
           {% endfor %}
           </div>
         {% endif %}
+
+        {% if page.date %}
+          <div class="post-date mb-2" style="color: var(--color-base-text-2); font-size: 0.9rem;">
+            {{ page.date | date_to_long_string }}
+          </div>
+        {% endif %}
         
         <div class="content">{{ content }}</div>
 
-        {% if page.categories %}
-        <div class="categories">
+        {% if page.tags %}
+        <div class="categories mt-3">
         {% include framework/categories-badges.html 
-            categories=page.categories
+            categories=page.tags
         %}
+        </div>
         {% endif %}
         </div>
 

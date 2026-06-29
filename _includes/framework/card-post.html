@@ -4,7 +4,7 @@
 {% assign icon = include.icon %}
 {% assign fa_icon = include.fa_icon %}
 {% assign url = include.url %}
-{% assign date = include.date %}
+{% assign card_date = include.date %}
 {% assign authors = include.authors %}
 {% if include.author and authors == nil %}
   {% assign authors = include.author | split: "," %}
@@ -24,7 +24,7 @@
   {% endif %}
 
   <div class="card-content">
-    {% if authors or date %}
+    {% if authors or card_date %}
       <div class="card-meta">
 
         {% if authors %}
@@ -38,9 +38,9 @@
           </div>
         {% endif %}
 
-        {% if date %}
+        {% if card_date %}
           <div class="card-date">
-            <span class="post-date-date">{{ date | date_to_long_string }}</span>
+            <span class="post-date-date">{{ card_date | date_to_long_string }}</span>
           </div>
         {% endif %}
 
