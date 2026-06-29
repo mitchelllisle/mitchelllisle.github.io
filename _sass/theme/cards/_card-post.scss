@@ -80,14 +80,27 @@
     font-size: 15px;
   }
   .card-categories {
-    display: inline-flex;
-    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 11px;
     font-family: $font-family-monospace;
-    > a {
-      background-color: var(--color-base-bg-2);
-      padding: 3px 7px;
-      border-radius: 2px;
-      margin-right: 10px;
+    .card-category {
+      display: inline-flex;
+      align-items: center;
+      color: var(--color-base-text-2);
+      background-color: var(--color-base-bg-3);
+      font-weight: 600;
+      line-height: 1.2;
+      padding: 4px 10px;
+      border: 1px solid var(--color-base-bg-3);
+      border-radius: 999px;
+      &:hover {
+        text-decoration: none;
+        color: var(--color-base-text);
+        background-color: var(--color-base-bg-2);
+        border-color: var(--color-base-text-2);
+      }
     }
   }
   .card-image {

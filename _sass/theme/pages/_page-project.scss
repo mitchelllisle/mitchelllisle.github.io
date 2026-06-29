@@ -13,9 +13,29 @@
   }
   .project-categories {
     margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .category-link {
+      display: inline-flex;
+    }
     a {
+      display: inline-flex;
+      align-items: center;
+      font-family: $font-family-monospace;
+      font-size: 13px;
       color: var(--color-base-text);
       font-weight: 600;
+      line-height: 1.1;
+      background: var(--color-base-bg-3);
+      padding: 6px 12px;
+      border: 1px solid var(--color-base-bg-3);
+      border-radius: 999px;
+      &:hover {
+        text-decoration: none;
+        background: var(--color-base-bg-2);
+        border-color: var(--color-base-text-2);
+      }
     }
   }
   .project-description {

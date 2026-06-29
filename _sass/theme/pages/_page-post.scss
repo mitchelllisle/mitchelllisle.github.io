@@ -15,20 +15,27 @@
     }
   }
   .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     .category-link {
-      display: inline-block;
-    a {
-        font-size: 15px;
-        background: var(--color-base-bg-2);
+      display: inline-flex;
+      a {
+        font-size: 13px;
+        background: var(--color-base-bg-3);
         color: var(--color-base-text);
         display: inline-flex;
+        align-items: center;
         font-family: $font-family-monospace;
+        font-weight: 600;
+        line-height: 1.1;
         padding: 6px 12px;
-        border-radius: $card-border-radius;
-        margin-right: 10px;
+        border: 1px solid var(--color-base-bg-3);
+        border-radius: 999px;
         &:hover {
           text-decoration: none;
-          background: var(--color-base-bg-3);
+          background: var(--color-base-bg-2);
+          border-color: var(--color-base-text-2);
         }
       }
     }
