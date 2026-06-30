@@ -1,0 +1,32 @@
+<div class="experience-list">
+  {% for job in site.data.experience %}
+  <div class="experience-block">
+
+    <div class="experience-company-header">
+      <a href="{{ job.website }}" target="_blank" rel="noopener" class="experience-logo-wrap">
+        <img src="{{ job.logo }}" alt="{{ job.company }} logo" class="experience-logo" />
+      </a>
+      <div class="experience-company-meta">
+        <a href="{{ job.website }}" target="_blank" rel="noopener" class="experience-company-name">{{ job.company }}</a>
+        <span class="experience-location">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          {{ job.location }}
+        </span>
+      </div>
+    </div>
+
+    <div class="experience-roles">
+      {% for role in job.roles %}
+      <div class="experience-role">
+        <div class="experience-role-title">{{ role.title }}</div>
+        <div class="experience-role-period">{{ role.period }}</div>
+      </div>
+      {% endfor %}
+      {% if job.description %}
+      <p class="experience-description">{{ job.description }}</p>
+      {% endif %}
+    </div>
+
+  </div>
+  {% endfor %}
+</div>

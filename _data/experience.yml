@@ -1,0 +1,81 @@
+- company: ubank
+  logo: /images/ubank_au_logo.jpeg
+  website: https://ubank.com.au
+  location: Sydney, New South Wales, Australia
+  roles:
+    - title: Engineering Manager — Data Platform, Engineering & Governance
+      period: May 2026 – Present
+    - title: Engineering Manager — Data Platform & Governance
+      period: Feb 2025 – May 2026
+    - title: Data Engineering Team Lead
+      period: Mar 2024 – Feb 2025
+    - title: Senior Data & Privacy Engineer
+      period: May 2023 – Mar 2024
+  description: >
+    Engineering Manager leading Data Engineering, Platforms & Governance. Responsible for
+    data infrastructure, security, and privacy across the bank. Leading a team of Data
+    Platform Engineers, Data Engineers, and Data Stewards who ensure all of ubank can
+    leverage data safely and effectively.
+
+- company: Thoughtworks
+  logo: /images/thoughtworks_logo.jpeg
+  website: https://thoughtworks.com
+  location: Sydney, New South Wales, Australia
+  roles:
+    - title: Senior Consulting Data & Privacy Engineer
+      period: Feb 2022 – May 2023
+  description: >
+    Consulting data engineer at a global technology consultancy, embedding data engineering
+    capability and applied machine learning solutions into client organisations across
+    financial services and beyond.
+
+- company: Bud
+  logo: /images/bud_financial_logo.jpeg
+  website: https://thisisbud.com
+  location: London, United Kingdom
+  roles:
+    - title: Data & Privacy Engineer
+      period: Aug 2019 – Feb 2022
+  description: >
+    Data engineer at a FinTech building the data science infrastructure powering Bud's
+    open banking platform — pipelines, services, and privacy-preserving data practices.
+
+- company: BigDatr
+  logo: /images/bigdatr_logo.jpeg
+  website: https://bigdatr.com
+  location: Melbourne, Victoria, Australia
+  roles:
+    - title: Data Engineer & Project Manager
+      period: Mar 2016 – May 2019
+  description: >
+    Built and maintained data ingestion pipelines for a marketing analytics platform.
+    Managed cross-functional delivery and coordinated with development, marketing, and
+    sales teams to ship new features.
+
+- company: Unleashed Software
+  logo: /images/unleashed_software_logo.jpeg
+  website: https://unleashedsoftware.com
+  location: Melbourne, Victoria, Australia
+  roles:
+    - title: Customer Engineer
+      period: Jul 2014 – Mar 2016
+  description: >
+    Pre-sales engineering and post-sales customer success for a SaaS inventory management
+    platform. Led the Solution Specialist team and designed integrated solutions for
+    enterprise customers.
+
+- company: Oracle
+  logo: /images/oracle_logo.jpeg
+  website: https://oracle.com
+  location: Sydney & Melbourne, Australia
+  roles:
+    - title: Staff Consultant — Data Integration
+      period: Jun 2013 – Jul 2014
+    - title: Associate Consultant
+      period: Feb 2013 – Dec 2013
+    - title: Graduate Consultant
+      period: Jan 2012 – Jan 2013
+  description: >
+    Oracle Consulting Services, progressing from Graduate to Staff Consultant. Specialised
+    in Taleo data integration and HCM across the APAC region, upskilling new consultants
+    and delivering enterprise integration projects.

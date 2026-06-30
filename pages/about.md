@@ -2,8 +2,14 @@
 layout: basic
 title: "About"
 permalink: "/about/"
-description: "My name is Mitchell Lisle. I lead teams across data engineering, platform, and governance."
+description: "Engineering Manager leading Data Engineering, Platforms & Governance at ubank. I build data systems that hold up in the real world and the teams that keep improving them."
 ---
+
+As the Engineering Manager of Data Engineering, Platforms & Governance at ubank, my focus is on making sure our data infrastructure can support our data needs — and that we do so with a strong emphasis on security and privacy. I lead a team of Data Platform Engineers, Data Engineers, and Data Stewards who ensure all of ubank can leverage data safely and effectively.
+
+## Experience
+
+{% include framework/experience.html %}
 
 ## Stack & Tools
 
@@ -26,7 +32,4 @@ I like working with all sorts of technologies but have spent most of my career w
 	<div class="stack-grid__item"><img class="stack-grid__logo--dark-friendly" src="https://cdn.simpleicons.org/github/181717" alt="GitHub" /><span>GitHub</span></div>
 </div>
 
-I care about building data systems that hold up in the real world and teams that can keep improving them over time.
-
 This site is where I write about data work, engineering culture, and the organisational realities around technology.
-
