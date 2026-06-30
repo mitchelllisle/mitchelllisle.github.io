@@ -44,16 +44,16 @@ body_classes: page-post
             {{ page.date | date_to_long_string }}
           </div>
         {% endif %}
-        
-        <div class="content">{{ content }}</div>
 
         {% if page.tags %}
-        <div class="categories mt-3">
+        <div class="categories mb-4">
         {% include framework/categories-badges.html 
             categories=page.tags
         %}
         </div>
         {% endif %}
+
+        <div class="content">{{ content }}</div>
         </div>
 
         {% include framework/comments.html %}

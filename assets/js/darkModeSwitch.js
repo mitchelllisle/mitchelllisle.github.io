@@ -27,10 +27,12 @@ function toggleDarkMode() {
 function initDarkMode() {
   let darkMode = localStorage.getItem("darkMode");
   if (darkMode === "true") {
+    document.documentElement.setAttribute("data-bs-theme", "dark");
     darkModeSwitches.forEach((item) => item.classList.add("dark"));
     return;
   }
   if (darkMode === "false") {
+    document.documentElement.setAttribute("data-bs-theme", "light");
     darkModeSwitches.forEach((item) => item.classList.add("light"));
     return;
   }

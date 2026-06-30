@@ -61,43 +61,41 @@ html[data-bs-theme='dark'] .stack-grid__logo--dark-friendly {
 }
 
 
-// Tag pills — pill-style labels with per-category colour
+// Tag pills — Carbon-style: solid pastel fill, no border, dark matched text
 .tag-pill {
   display: inline-flex;
   align-items: center;
   padding: 3px 10px;
   border-radius: 999px;
-  border: 1px solid transparent;
-  font-size: 11.5px;
+  border: none;
+  font-size: 12px;
   font-family: $font-family-monospace;
   font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
-  transition: opacity 0.15s ease;
   line-height: 1.6;
-  &:hover {
-    opacity: 0.75;
-    text-decoration: none;
-  }
+  transition: opacity 0.15s ease;
+  &:hover { opacity: 0.75; text-decoration: none; }
 }
 
-// 8 hue slots — rgba washes so pills tint without shouting
-.tag-pill--0 { background: rgba(59,130,246,0.18); color: #1d4ed8; border-color: rgba(59,130,246,0.35); }
-.tag-pill--1 { background: rgba(34,197,94, 0.18); color: #15803d; border-color: rgba(34,197,94, 0.40); }
-.tag-pill--2 { background: rgba(139,92,246,0.18); color: #6d28d9; border-color: rgba(139,92,246,0.35); }
-.tag-pill--3 { background: rgba(245,158,11,0.18); color: #92400e; border-color: rgba(245,158,11,0.45); }
-.tag-pill--4 { background: rgba(244,63,94, 0.18); color: #be123c; border-color: rgba(244,63,94, 0.35); }
-.tag-pill--5 { background: rgba(6,182,212, 0.18); color: #0e7490; border-color: rgba(6,182,212, 0.40); }
-.tag-pill--6 { background: rgba(249,115,22,0.18); color: #c2410c; border-color: rgba(249,115,22,0.45); }
-.tag-pill--7 { background: rgba(20,184,166,0.18); color: #0f766e; border-color: rgba(20,184,166,0.45); }
+// Light mode — rgba tint so background reads as coloured but not flat
+.tag-pill--0 { background: rgba(59,130,246,0.22);  color: #1a4472; }
+.tag-pill--1 { background: rgba(22,163,74, 0.22);  color: #1a5c26; }
+.tag-pill--2 { background: rgba(124,58,237,0.22);  color: #5a1a8a; }
+.tag-pill--3 { background: rgba(217,119,6, 0.22);  color: #7a3a0a; }
+.tag-pill--4 { background: rgba(220,38,38, 0.22);  color: #8a1a3a; }
+.tag-pill--5 { background: rgba(8,145,178, 0.22);  color: #0a4a44; }
+.tag-pill--6 { background: rgba(234,88,12, 0.22);  color: #7a2e0a; }
+.tag-pill--7 { background: rgba(13,148,136,0.22);  color: #1a4a3a; }
 
+// Dark mode — slightly higher opacity so ghost shows on near-black bg
 html[data-bs-theme="dark"] {
-  .tag-pill--0 { background: rgba(59,130,246,0.15); color: #93c5fd; border-color: rgba(59,130,246,0.40); }
-  .tag-pill--1 { background: rgba(34,197,94, 0.15); color: #86efac; border-color: rgba(34,197,94, 0.40); }
-  .tag-pill--2 { background: rgba(139,92,246,0.15); color: #c4b5fd; border-color: rgba(139,92,246,0.40); }
-  .tag-pill--3 { background: rgba(245,158,11,0.15); color: #fcd34d; border-color: rgba(245,158,11,0.40); }
-  .tag-pill--4 { background: rgba(244,63,94, 0.15); color: #fda4af; border-color: rgba(244,63,94, 0.40); }
-  .tag-pill--5 { background: rgba(6,182,212, 0.15); color: #67e8f9; border-color: rgba(6,182,212, 0.40); }
-  .tag-pill--6 { background: rgba(249,115,22,0.15); color: #fdba74; border-color: rgba(249,115,22,0.40); }
-  .tag-pill--7 { background: rgba(20,184,166,0.15); color: #5eead4; border-color: rgba(20,184,166,0.40); }
+  .tag-pill--0 { background: rgba(59,130,246,0.25);  color: #93c5fd; }
+  .tag-pill--1 { background: rgba(34,197,94, 0.25);  color: #86efac; }
+  .tag-pill--2 { background: rgba(139,92,246,0.25);  color: #c4b5fd; }
+  .tag-pill--3 { background: rgba(245,158,11,0.25);  color: #fcd34d; }
+  .tag-pill--4 { background: rgba(239,68,68, 0.25);  color: #fda4af; }
+  .tag-pill--5 { background: rgba(6,182,212, 0.25);  color: #67e8f9; }
+  .tag-pill--6 { background: rgba(249,115,22,0.25);  color: #fdba74; }
+  .tag-pill--7 { background: rgba(20,184,166,0.25);  color: #5eead4; }
 }
