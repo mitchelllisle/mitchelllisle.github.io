@@ -68,7 +68,8 @@
     {% if categories %}
       <div class="card-categories mt-auto">
         {% for category in categories %}
-          <a class="card-category" href="{{ "/category/" | relative_url }}{{ category | slugify }}">{{ category }}</a>
+          {% assign tag_hue = category | size | modulo: 8 %}
+          <a class="tag-pill tag-pill--{{ tag_hue }}" href="{{ "/category/" | relative_url }}{{ category | slugify }}">{{ category }}</a>
         {% endfor %}
       </div>
     {% endif %}

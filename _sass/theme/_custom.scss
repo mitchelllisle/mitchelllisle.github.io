@@ -60,3 +60,43 @@ html[data-bs-theme='dark'] .stack-grid__logo--dark-friendly {
     filter: invert(1) brightness(1.2);
 }
 
+
+// Tag pills — pill-style labels with per-category colour
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-family: $font-family-monospace;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+  line-height: 1.6;
+  &:hover {
+    opacity: 0.75;
+    text-decoration: none;
+  }
+}
+
+// 8 hue slots — light + dark variants
+.tag-pill--0 { background: #dbeafe; color: #1e40af; }
+.tag-pill--1 { background: #d1fae5; color: #065f46; }
+.tag-pill--2 { background: #ede9fe; color: #5b21b6; }
+.tag-pill--3 { background: #fef3c7; color: #92400e; }
+.tag-pill--4 { background: #ffe4e6; color: #9f1239; }
+.tag-pill--5 { background: #cffafe; color: #164e63; }
+.tag-pill--6 { background: #ffedd5; color: #9a3412; }
+.tag-pill--7 { background: #ccfbf1; color: #134e4a; }
+
+html[data-bs-theme="dark"] {
+  .tag-pill--0 { background: #1e3a5f; color: #93c5fd; }
+  .tag-pill--1 { background: #064e3b; color: #6ee7b7; }
+  .tag-pill--2 { background: #2e1065; color: #c4b5fd; }
+  .tag-pill--3 { background: #451a03; color: #fcd34d; }
+  .tag-pill--4 { background: #4c0519; color: #fda4af; }
+  .tag-pill--5 { background: #0c3547; color: #67e8f9; }
+  .tag-pill--6 { background: #431407; color: #fdba74; }
+  .tag-pill--7 { background: #0d2e29; color: #5eead4; }
+}

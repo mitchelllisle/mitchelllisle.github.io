@@ -21,18 +21,19 @@ body_classes: page-category
 <div class="section pt-0">
   <div class="container">
     {% assign category = page.title %}
-    {% for post in site.categories[category] %}
+    {% for post in site.tags[category] %}
       {% assign post_thumbnail = post.thumbnail | default: post.image %}
+      {% assign post_date = post.date | date: "%Y-%m-%d" %}
       <div class="row">
         <div class="col-12 col-md-8 mb-2">
           {% include theme/cards/card-post.html 
             title=post.title
-            date=post.date
+            date=post_date
             description=post.description 
             thumbnail=post_thumbnail
-              authors=post.authors
-              author=post.author
-              categories=post.categories
+            authors=post.authors
+            author=post.author
+            categories=post.tags
             url=post.url 
             style="list"
           %}
@@ -40,4 +41,3 @@ body_classes: page-category
       </div>
     {% endfor %}
   </div>
-</div>
