@@ -81,24 +81,23 @@ html[data-bs-theme='dark'] .stack-grid__logo--dark-friendly {
   }
 }
 
-// 8 hue slots — light mode: medium-saturation fill + matching border
-// dark mode: solid mid-range bg so pills pop against the near-black page
-.tag-pill--0 { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
-.tag-pill--1 { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
-.tag-pill--2 { background: #ede9fe; color: #6d28d9; border: 1px solid #c4b5fd; }
-.tag-pill--3 { background: #fef9c3; color: #a16207; border: 1px solid #fde047; }
-.tag-pill--4 { background: #ffe4e6; color: #be123c; border: 1px solid #fda4af; }
-.tag-pill--5 { background: #cffafe; color: #0e7490; border: 1px solid #67e8f9; }
-.tag-pill--6 { background: #ffedd5; color: #c2410c; border: 1px solid #fdba74; }
-.tag-pill--7 { background: #ccfbf1; color: #0f766e; border: 1px solid #5eead4; }
+// 8 hue slots — rgba washes so pills tint without shouting
+.tag-pill--0 { background: rgba(59,130,246,0.10); color: #1d4ed8; border-color: rgba(59,130,246,0.30); }
+.tag-pill--1 { background: rgba(34,197,94, 0.10); color: #15803d; border-color: rgba(34,197,94, 0.35); }
+.tag-pill--2 { background: rgba(139,92,246,0.10); color: #6d28d9; border-color: rgba(139,92,246,0.30); }
+.tag-pill--3 { background: rgba(245,158,11,0.10); color: #92400e; border-color: rgba(245,158,11,0.40); }
+.tag-pill--4 { background: rgba(244,63,94, 0.10); color: #be123c; border-color: rgba(244,63,94, 0.30); }
+.tag-pill--5 { background: rgba(6,182,212, 0.10); color: #0e7490; border-color: rgba(6,182,212, 0.35); }
+.tag-pill--6 { background: rgba(249,115,22,0.10); color: #c2410c; border-color: rgba(249,115,22,0.40); }
+.tag-pill--7 { background: rgba(20,184,166,0.10); color: #0f766e; border-color: rgba(20,184,166,0.40); }
 
 html[data-bs-theme="dark"] {
-  .tag-pill--0 { background: #1e3a8a; color: #bfdbfe; border-color: #3b82f6; }
-  .tag-pill--1 { background: #14532d; color: #bbf7d0; border-color: #22c55e; }
-  .tag-pill--2 { background: #4c1d95; color: #ddd6fe; border-color: #8b5cf6; }
-  .tag-pill--3 { background: #78350f; color: #fde68a; border-color: #f59e0b; }
-  .tag-pill--4 { background: #881337; color: #fecdd3; border-color: #f43f5e; }
-  .tag-pill--5 { background: #164e63; color: #a5f3fc; border-color: #06b6d4; }
-  .tag-pill--6 { background: #7c2d12; color: #fed7aa; border-color: #f97316; }
-  .tag-pill--7 { background: #134e4a; color: #99f6e4; border-color: #14b8a6; }
+  .tag-pill--0 { background: rgba(59,130,246,0.15); color: #93c5fd; border-color: rgba(59,130,246,0.40); }
+  .tag-pill--1 { background: rgba(34,197,94, 0.15); color: #86efac; border-color: rgba(34,197,94, 0.40); }
+  .tag-pill--2 { background: rgba(139,92,246,0.15); color: #c4b5fd; border-color: rgba(139,92,246,0.40); }
+  .tag-pill--3 { background: rgba(245,158,11,0.15); color: #fcd34d; border-color: rgba(245,158,11,0.40); }
+  .tag-pill--4 { background: rgba(244,63,94, 0.15); color: #fda4af; border-color: rgba(244,63,94, 0.40); }
+  .tag-pill--5 { background: rgba(6,182,212, 0.15); color: #67e8f9; border-color: rgba(6,182,212, 0.40); }
+  .tag-pill--6 { background: rgba(249,115,22,0.15); color: #fdba74; border-color: rgba(249,115,22,0.40); }
+  .tag-pill--7 { background: rgba(20,184,166,0.15); color: #5eead4; border-color: rgba(20,184,166,0.40); }
 }
