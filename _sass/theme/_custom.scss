@@ -82,14 +82,14 @@ html[data-bs-theme='dark'] .stack-grid__logo--dark-friendly {
 }
 
 // 8 hue slots — rgba washes so pills tint without shouting
-.tag-pill--0 { background: rgba(59,130,246,0.10); color: #1d4ed8; border-color: rgba(59,130,246,0.30); }
-.tag-pill--1 { background: rgba(34,197,94, 0.10); color: #15803d; border-color: rgba(34,197,94, 0.35); }
-.tag-pill--2 { background: rgba(139,92,246,0.10); color: #6d28d9; border-color: rgba(139,92,246,0.30); }
-.tag-pill--3 { background: rgba(245,158,11,0.10); color: #92400e; border-color: rgba(245,158,11,0.40); }
-.tag-pill--4 { background: rgba(244,63,94, 0.10); color: #be123c; border-color: rgba(244,63,94, 0.30); }
-.tag-pill--5 { background: rgba(6,182,212, 0.10); color: #0e7490; border-color: rgba(6,182,212, 0.35); }
-.tag-pill--6 { background: rgba(249,115,22,0.10); color: #c2410c; border-color: rgba(249,115,22,0.40); }
-.tag-pill--7 { background: rgba(20,184,166,0.10); color: #0f766e; border-color: rgba(20,184,166,0.40); }
+.tag-pill--0 { background: rgba(59,130,246,0.18); color: #1d4ed8; border-color: rgba(59,130,246,0.35); }
+.tag-pill--1 { background: rgba(34,197,94, 0.18); color: #15803d; border-color: rgba(34,197,94, 0.40); }
+.tag-pill--2 { background: rgba(139,92,246,0.18); color: #6d28d9; border-color: rgba(139,92,246,0.35); }
+.tag-pill--3 { background: rgba(245,158,11,0.18); color: #92400e; border-color: rgba(245,158,11,0.45); }
+.tag-pill--4 { background: rgba(244,63,94, 0.18); color: #be123c; border-color: rgba(244,63,94, 0.35); }
+.tag-pill--5 { background: rgba(6,182,212, 0.18); color: #0e7490; border-color: rgba(6,182,212, 0.40); }
+.tag-pill--6 { background: rgba(249,115,22,0.18); color: #c2410c; border-color: rgba(249,115,22,0.45); }
+.tag-pill--7 { background: rgba(20,184,166,0.18); color: #0f766e; border-color: rgba(20,184,166,0.45); }
 
 html[data-bs-theme="dark"] {
   .tag-pill--0 { background: rgba(59,130,246,0.15); color: #93c5fd; border-color: rgba(59,130,246,0.40); }
